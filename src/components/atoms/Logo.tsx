@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useResponsive } from '../../hooks/useResponsive';
+import { STYLES } from '../../constants/data';
 
 interface LogoProps {
   size?: 'profile' | 'linkCard' | number;
