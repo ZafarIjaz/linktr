@@ -43,7 +43,7 @@ export const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({ socialMediaI
           }}
           onClick={() => {
             // Handle social media icon click
-            console.log(`Clicked ${socialIcon.label}`);
+            console.log(`Clicked ${socialIcon.name}`);
           }}
         >
           <Icon

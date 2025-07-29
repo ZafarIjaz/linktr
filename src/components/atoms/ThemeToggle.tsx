@@ -16,7 +16,6 @@ export const ThemeToggle: React.FC = () => {
         width: getResponsiveValue({ mobile: '48px', tablet: '56px', desktop: '56px' }),
         height: getResponsiveValue({ mobile: '48px', tablet: '56px', desktop: '56px' }),
         borderRadius: '50%',
-        border: 'none',
         backgroundColor: theme === 'dark' ? '#FFFFFF' : '#1F2937',
         color: theme === 'dark' ? '#1F2937' : '#FFFFFF',
         cursor: 'pointer',

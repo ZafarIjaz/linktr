@@ -57,7 +57,6 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, onThreeDotsClick }) =>
           width: '100%',
           backgroundColor: colors.card,
           color: colors.text,
-          border: `1px solid ${colors.border}`,
           borderRadius: '16px',
           padding: getResponsiveValue({ mobile: '16px', tablet: '20px', desktop: '20px' }),
           display: 'flex',
@@ -101,7 +100,7 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, onThreeDotsClick }) =>
           }}>
             <Icon
               icon={link.icon}
-              size="linkCard"
+              size={getResponsiveValue({ mobile: 16, tablet: 20, desktop: 20 })}
             />
           </div>
 
