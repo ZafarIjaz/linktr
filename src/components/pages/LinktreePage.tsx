@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { LinktreeTemplate } from '../templates/LinktreeTemplate';
 import { LINKTREE_DATA } from '../../constants/data';
+import { Link } from '../../types';
 
 export const LinktreePage: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  const [selectedLink, setSelectedLink] = useState<any>(null);
+  const [selectedLink, setSelectedLink] = useState<Link | null>(null);
 
-  const handleThreeDotsClick = (link: any) => {
+  const handleThreeDotsClick = (link: Link) => {
     setSelectedLink(link);
     setShowModal(true);
   };

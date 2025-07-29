@@ -2,9 +2,10 @@ import React from 'react';
 import { useResponsive } from '../../hooks/useResponsive';
 import { useTheme } from '../../contexts/ThemeContext';
 import { STYLES } from '../../constants/data';
+import { SocialMediaIcon } from '../../types';
 
 interface FooterProps {
-  socialMediaIcons: any[];
+  socialMediaIcons: SocialMediaIcon[];
 }
 
 export const Footer: React.FC<FooterProps> = ({ socialMediaIcons }) => {

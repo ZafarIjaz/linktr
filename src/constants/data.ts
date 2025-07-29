@@ -1,4 +1,4 @@
-import { LinktreeData, SocialShareOption, SocialMediaIcon } from '../types';
+import { LinktreeData } from '../types';
 
 export const LINKTREE_DATA: LinktreeData = {
   profile: {

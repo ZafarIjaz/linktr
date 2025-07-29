@@ -3,10 +3,11 @@ import { Icon } from '../atoms/Icon';
 import { useResponsive } from '../../hooks/useResponsive';
 import { useTheme } from '../../contexts/ThemeContext';
 import { STYLES } from '../../constants/data';
+import { Link } from '../../types';
 
 interface LinkCardProps {
-  link: any;
-  onThreeDotsClick: (link: any) => void;
+  link: Link;
+  onThreeDotsClick: (link: Link) => void;
 }
 
 export const LinkCard: React.FC<LinkCardProps> = ({ link, onThreeDotsClick }) => {

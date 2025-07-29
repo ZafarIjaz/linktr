@@ -6,15 +6,16 @@ import { ShareModal } from '../organisms/ShareModal';
 import { useResponsive } from '../../hooks/useResponsive';
 import { useTheme } from '../../contexts/ThemeContext';
 import { STYLES } from '../../constants/data';
+import { Profile, Link, SocialMediaIcon, SocialShareOption } from '../../types';
 
 interface LinktreeTemplateProps {
-  profile: any;
-  links: any[];
-  socialMediaIcons: any[];
-  socialShareOptions: any[];
+  profile: Profile;
+  links: Link[];
+  socialMediaIcons: SocialMediaIcon[];
+  socialShareOptions: SocialShareOption[];
   showModal: boolean;
-  selectedLink: any;
-  onThreeDotsClick: (link: any) => void;
+  selectedLink: Link | null;
+  onThreeDotsClick: (link: Link) => void;
   onCloseModal: () => void;
 }
 

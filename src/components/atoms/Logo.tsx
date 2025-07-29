@@ -1,7 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
 import { useResponsive } from '../../hooks/useResponsive';
-import { useTheme } from '../../contexts/ThemeContext';
-import { STYLES } from '../../constants/data';
 
 interface LogoProps {
   size?: 'profile' | 'linkCard' | number;
@@ -17,8 +16,6 @@ export const Logo: React.FC<LogoProps> = ({
   animated = true
 }) => {
   const { getResponsiveValue } = useResponsive();
-  const { theme } = useTheme();
-  const colors = STYLES.colors[theme];
 
   let logoSize: number;
 
@@ -93,9 +90,11 @@ export const Logo: React.FC<LogoProps> = ({
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-        <img
+        <Image
           src={src}
           alt={alt}
+          width={logoSize * 0.85}
+          height={logoSize * 0.85}
           style={{
             width: '85%',
             height: '85%',

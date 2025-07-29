@@ -3,10 +3,11 @@
 import React from 'react';
 import { LinkCard } from '../molecules/LinkCard';
 import { useResponsive } from '../../hooks/useResponsive';
+import { Link } from '../../types';
 
 interface LinkListProps {
-  links: any[];
-  onThreeDotsClick: (link: any) => void;
+  links: Link[];
+  onThreeDotsClick: (link: Link) => void;
 }
 
 export const LinkList: React.FC<LinkListProps> = ({ links, onThreeDotsClick }) => {

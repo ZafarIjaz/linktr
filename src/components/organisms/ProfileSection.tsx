@@ -3,9 +3,10 @@ import { Logo } from '../atoms/Logo';
 import { useResponsive } from '../../hooks/useResponsive';
 import { useTheme } from '../../contexts/ThemeContext';
 import { STYLES } from '../../constants/data';
+import { Profile } from '../../types';
 
 interface ProfileSectionProps {
-  profile: any;
+  profile: Profile;
 }
 
 export const ProfileSection: React.FC<ProfileSectionProps> = ({ profile }) => {

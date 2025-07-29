@@ -1,12 +1,11 @@
 import React from 'react';
-import { SocialShareOption } from '../../types';
+import { SocialShareOption, Link } from '../../types';
 import { Logo } from '../atoms/Logo';
 import { useResponsive } from '../../hooks/useResponsive';
-import { STYLES } from '../../constants/data';
 
 interface ShareModalProps {
   isOpen: boolean;
-  selectedLink: any;
+  selectedLink: Link | null;
   socialShareOptions: SocialShareOption[];
   onClose: () => void;
 }

@@ -8,7 +8,7 @@ interface SocialMediaIconsProps {
 }
 
 export const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({ socialMediaIcons }) => {
-  const { getResponsiveValue, isMobile } = useResponsive();
+  const { getResponsiveValue } = useResponsive();
 
   return (
     <div style={{
