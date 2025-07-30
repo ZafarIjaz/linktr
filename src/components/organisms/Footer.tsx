@@ -19,6 +19,96 @@ export const Footer: React.FC<FooterProps> = ({ socialMediaIcons }) => {
       textAlign: 'center',
       animation: 'fadeIn 1s ease-out'
     }}>
+      {/* Contact Information Section */}
+      <div style={{
+        backgroundColor: colors.glassmorphism,
+        borderRadius: '16px',
+        padding: getResponsiveValue({ mobile: '20px', tablet: '24px', desktop: '28px' }),
+        marginBottom: getResponsiveValue({ mobile: '24px', tablet: '32px', desktop: '40px' }),
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)'
+      }}>
+        <h3 style={{
+          fontSize: getResponsiveValue({ mobile: '16px', tablet: '18px', desktop: '20px' }),
+          fontWeight: '600',
+          margin: '0 0 16px 0',
+          color: colors.text
+        }}>
+          📍 Contact Information
+        </h3>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: getResponsiveValue({ mobile: '16px', tablet: '20px', desktop: '24px' }),
+          textAlign: 'left'
+        }}>
+          <div>
+            <h4 style={{
+              fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '18px' }),
+              fontWeight: '600',
+              margin: '0 0 8px 0',
+              color: colors.text
+            }}>
+              🏢 Office Address
+            </h4>
+            <p style={{
+              fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+              margin: '0',
+              color: colors.textSecondary,
+              lineHeight: '1.5'
+            }}>
+              2120 E Fire Tower Rd<br />
+              Suite 107 - 1063<br />
+              Greenville, NC 27858-8013<br />
+              United States
+            </p>
+          </div>
+
+          <div>
+            <h4 style={{
+              fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '18px' }),
+              fontWeight: '600',
+              margin: '0 0 8px 0',
+              color: colors.text
+            }}>
+              💳 Payment Methods
+            </h4>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '4px'
+            }}>
+              <p style={{
+                fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+                margin: '0',
+                color: colors.textSecondary
+              }}>
+                <strong>PayPal:</strong><br />
+                @infaqfoundationncusa
+              </p>
+              <p style={{
+                fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+                margin: '0',
+                color: colors.textSecondary
+              }}>
+                <strong>Zelle:</strong><br />
+                infaqfoundation.nc.usa@gmail.com
+              </p>
+              <p style={{
+                fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+                margin: '0',
+                color: colors.textSecondary
+              }}>
+                <strong>WhatsApp Business:</strong><br />
+                +1 (343) 307-5825
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Social Media Icons */}
       <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -64,124 +154,34 @@ export const Footer: React.FC<FooterProps> = ({ socialMediaIcons }) => {
         ))}
       </div>
 
+      {/* Mission Statement */}
       <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        gap: getResponsiveValue({ mobile: '16px', tablet: '24px', desktop: '32px' }),
+        backgroundColor: colors.glassmorphism,
+        borderRadius: '12px',
+        padding: getResponsiveValue({ mobile: '16px', tablet: '20px', desktop: '24px' }),
         marginBottom: getResponsiveValue({ mobile: '20px', tablet: '24px', desktop: '32px' }),
-        flexWrap: 'wrap'
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)'
       }}>
-        <a
-          href="https://linktr.ee/help"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: colors.textSecondary,
-            textDecoration: 'none',
-            fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '16px' }),
-            transition: 'color 0.2s ease-in-out'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = colors.text;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = colors.textSecondary;
-          }}
-        >
-          Help
-        </a>
-        <a
-          href="https://linktr.ee/privacy"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: colors.textSecondary,
-            textDecoration: 'none',
-            fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '16px' }),
-            transition: 'color 0.2s ease-in-out'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = colors.text;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = colors.textSecondary;
-          }}
-        >
-          Privacy
-        </a>
-        <a
-          href="https://linktr.ee/terms"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: colors.textSecondary,
-            textDecoration: 'none',
-            fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '16px' }),
-            transition: 'color 0.2s ease-in-out'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = colors.text;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = colors.textSecondary;
-          }}
-        >
-          Terms
-        </a>
+        <p style={{
+          fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '18px' }),
+          margin: '0',
+          color: colors.textSecondary,
+          fontStyle: 'italic',
+          textAlign: 'center',
+          lineHeight: '1.6'
+        }}>
+          &ldquo;Because true giving never ends.&rdquo; — Infaq Foundation
+        </p>
       </div>
 
-      <div style={{
-        marginBottom: getResponsiveValue({ mobile: '20px', tablet: '24px', desktop: '32px' })
-      }}>
-        <a
-          href="https://linktr.ee/signup"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: 'inline-block',
-            backgroundColor: colors.accent,
-            color: theme === 'dark' ? '#000000' : '#FFFFFF',
-            padding: getResponsiveValue({ mobile: '12px 24px', tablet: '16px 32px', desktop: '16px 32px' }),
-            borderRadius: '12px',
-            textDecoration: 'none',
-            fontSize: getResponsiveValue({ mobile: '16px', tablet: '18px', desktop: '18px' }),
-            fontWeight: '600',
-            transition: 'all 0.3s ease-in-out',
-            boxShadow: `0 4px 12px ${colors.shadow}`
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05) translateY(-2px)';
-            e.currentTarget.style.boxShadow = `0 8px 25px ${colors.shadow}`;
-            e.currentTarget.style.backgroundColor = colors.accentHover;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1) translateY(0)';
-            e.currentTarget.style.boxShadow = `0 4px 12px ${colors.shadow}`;
-            e.currentTarget.style.backgroundColor = colors.accent;
-          }}
-        >
-          Create your Linktree
-        </a>
-      </div>
-
+      {/* Copyright */}
       <div style={{
         color: colors.textSecondary,
         fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '14px' }),
         opacity: 0.8
       }}>
-        Powered by{' '}
-        <a
-          href="https://linktr.ee"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            color: colors.accent,
-            textDecoration: 'none',
-            fontWeight: '600'
-          }}
-        >
-          Linktree
-        </a>
+        © 2024 Infaq Foundation. All rights reserved.
       </div>
     </footer>
   );

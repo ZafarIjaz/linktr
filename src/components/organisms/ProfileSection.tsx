@@ -26,7 +26,6 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({ profile }) => {
       }}>
         <Logo
           size="profile"
-          src={profile.avatar}
           animated={true}
         />
       </div>
@@ -60,6 +59,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({ profile }) => {
         justifyContent: 'center',
         gap: getResponsiveValue({ mobile: '12px', tablet: '16px', desktop: '20px' }),
         flexWrap: 'wrap',
+        marginBottom: getResponsiveValue({ mobile: '20px', tablet: '24px', desktop: '28px' }),
         animation: 'slideUp 1.2s ease-out'
       }}>
         <span style={{
@@ -85,6 +85,95 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({ profile }) => {
         }}>
           ✓ {profile.status}
         </span>
+      </div>
+
+      {/* Mission Statement Section */}
+      <div style={{
+        backgroundColor: colors.glassmorphism,
+        borderRadius: '16px',
+        padding: getResponsiveValue({ mobile: '20px', tablet: '24px', desktop: '28px' }),
+        marginBottom: getResponsiveValue({ mobile: '24px', tablet: '28px', desktop: '32px' }),
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        animation: 'slideUp 1.4s ease-out'
+      }}>
+        <h2 style={{
+          fontSize: getResponsiveValue({ mobile: '18px', tablet: '20px', desktop: '22px' }),
+          fontWeight: '600',
+          margin: '0 0 12px 0',
+          color: colors.text,
+          textAlign: 'center'
+        }}>
+          Giving with Purpose, Serving with Heart
+        </h2>
+
+        <p style={{
+          fontSize: getResponsiveValue({ mobile: '14px', tablet: '16px', desktop: '18px' }),
+          lineHeight: '1.6',
+          margin: '0 0 16px 0',
+          color: colors.textSecondary,
+          textAlign: 'left'
+        }}>
+          A registered non-profit organization dedicated to transforming lives through purposeful giving and community-driven service. Rooted in the timeless value of Infaq — giving purely for the sake of Allah.
+        </p>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+          gap: '12px',
+          marginTop: '16px'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+            color: colors.textSecondary
+          }}>
+            <span>💧</span>
+            <span>Clean Water</span>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+            color: colors.textSecondary
+          }}>
+            <span>🍽️</span>
+            <span>Food Aid</span>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+            color: colors.textSecondary
+          }}>
+            <span>📚</span>
+            <span>Education</span>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+            color: colors.textSecondary
+          }}>
+            <span>🏥</span>
+            <span>Medical Aid</span>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: getResponsiveValue({ mobile: '12px', tablet: '14px', desktop: '16px' }),
+            color: colors.textSecondary
+          }}>
+            <span>🚨</span>
+            <span>Emergency Relief</span>
+          </div>
+        </div>
       </div>
     </div>
   );

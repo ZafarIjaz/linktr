@@ -2,139 +2,92 @@ import { LinktreeData } from '../types';
 
 export const LINKTREE_DATA: LinktreeData = {
   profile: {
-    name: 'Fatih Foundation',
-    username: '@fatihfoundationpk',
-    location: 'Pakistan',
+    name: 'Infaq Foundation',
+    username: '@infaqfoundation',
+    location: 'Greenville, NC, United States',
     status: 'Verified',
     avatar: '/image.jpeg'
   },
   links: [
     {
       id: 1,
-      title: 'WhatsApp Channel',
-      url: 'https://www.whatsapp.com/channel/0029Va8IILA11ulWpV9UiB3r',
-      icon: '💬',
-      color: '#25D366'
-    },
-    {
-      id: 2,
       title: 'WhatsApp Business',
-      url: 'https://api.whatsapp.com/send/?phone=923018483791&text&type=phone_number&app_absent=0',
+      url: 'https://api.whatsapp.com/send/?phone=13433075825&text&type=phone_number&app_absent=0',
       icon: '📱',
       color: '#25D366'
     },
     {
+      id: 2,
+      title: 'PayPal Donations',
+      url: 'https://www.paypal.com/paypalme/infaqfoundationncusa',
+      icon: '💳',
+      color: '#00457C'
+    },
+    {
       id: 3,
-      title: 'WhatsApp Group',
-      url: 'https://chat.whatsapp.com/JNWq6X5gMG9EIz5TxU0bvk',
-      icon: '👥',
-      color: '#25D366'
+      title: 'Zelle Donations',
+      url: 'mailto:infaqfoundation.nc.usa@gmail.com?subject=Zelle%20Donation%20Inquiry',
+      icon: '🏦',
+      color: '#6B46C1'
     },
     {
       id: 4,
-      title: 'Foundation Introduction',
-      url: 'https://ugc.production.linktr.ee/4315e7a4-7277-46d3-8a9c-19bdb61c29b8_FATIH-FOUNDATION-INTRODUCTION--2-.pdf',
-      icon: '📄',
-      color: '#FF6B6B'
-    },
-    {
-      id: 5,
-      title: 'Instagram',
-      url: 'https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ffatihfoundationpk%2F&is_from_rle',
-      icon: '📸',
-      color: '#E4405F'
-    },
-    {
-      id: 6,
-      title: 'Official Website',
-      url: 'https://fatihfoundation.com/',
-      icon: '🌐',
-      color: '#3B82F6'
-    },
-    {
-      id: 7,
-      title: 'Facebook',
-      url: 'https://www.facebook.com/FatihFoundation',
-      icon: '📘',
-      color: '#1877F2'
-    },
-    {
-      id: 8,
-      title: 'X (Twitter)',
-      url: 'https://x.com/FatihFoundation',
-      icon: '🐦',
-      color: '#000000'
-    },
-    {
-      id: 9,
-      title: 'Google Maps - Main Office',
-      url: 'https://maps.app.goo.gl/dGQaDePQzjmpKMaz5',
-      icon: '📍',
-      color: '#4285F4'
-    },
-    {
-      id: 10,
-      title: 'LinkedIn',
-      url: 'http://linkedin.com/company/fatih-foundation-pakistan/',
-      icon: '💼',
-      color: '#0A66C2'
-    },
-    {
-      id: 11,
-      title: 'YouTube - House of Fatih',
-      url: 'https://www.youtube.com/@fatihfoundation',
+      title: 'YouTube Channel',
+      url: 'https://youtube.com/@islam_deen143?si=MkcFYvXUs92tUBKf',
       icon: '📺',
       color: '#FF0000'
     },
     {
-      id: 12,
-      title: 'Google Maps - House of Fatih',
-      url: 'https://maps.app.goo.gl/5CnyCL36RG3bpL6BA',
-      icon: '🏠',
-      color: '#4285F4'
-    },
-    {
-      id: 13,
-      title: 'Google Maps - Islamabad',
-      url: 'https://maps.app.goo.gl/bSuXUfdezo2yd2DA6',
-      icon: '🏛️',
-      color: '#4285F4'
-    },
-    {
-      id: 14,
-      title: 'Ways of Donation',
-      url: 'https://ugc.production.linktr.ee/1524f1d8-aec8-4aed-b307-1aa6a2983474_ways-of-donation.pdf',
-      icon: '💝',
+      id: 5,
+      title: 'Our Mission & Programs',
+      url: '#',
+      icon: '🎯',
       color: '#10B981'
     },
     {
-      id: 15,
-      title: 'Donate Now',
-      url: 'https://fatihfoundation.com/donate/',
-      icon: '❤️',
+      id: 6,
+      title: 'Clean Water Initiatives',
+      url: '#',
+      icon: '💧',
+      color: '#3B82F6'
+    },
+    {
+      id: 7,
+      title: 'Food Distribution',
+      url: '#',
+      icon: '🍽️',
+      color: '#F59E0B'
+    },
+    {
+      id: 8,
+      title: 'Educational Support',
+      url: '#',
+      icon: '📚',
+      color: '#8B5CF6'
+    },
+    {
+      id: 9,
+      title: 'Medical Aid',
+      url: '#',
+      icon: '🏥',
       color: '#EF4444'
     }
   ],
   socialMediaIcons: [
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/fatihfoundationpk/',
-      icon: '📸'
-    },
-    {
-      name: 'Facebook',
-      url: 'https://www.facebook.com/FatihFoundation',
-      icon: '📘'
-    },
-    {
-      name: 'Twitter',
-      url: 'https://x.com/FatihFoundation',
-      icon: '🐦'
-    },
-    {
       name: 'YouTube',
-      url: 'https://www.youtube.com/@fatihfoundation',
+      url: 'https://youtube.com/@islam_deen143?si=MkcFYvXUs92tUBKf',
       icon: '📺'
+    },
+    {
+      name: 'WhatsApp',
+      url: 'https://api.whatsapp.com/send/?phone=13433075825&text&type=phone_number&app_absent=0',
+      icon: '📱'
+    },
+    {
+      name: 'Email',
+      url: 'mailto:infaqfoundation.nc.usa@gmail.com',
+      icon: '✉️'
     }
   ],
   socialShareOptions: [
@@ -144,7 +97,7 @@ export const LINKTREE_DATA: LinktreeData = {
     { label: 'WhatsApp', icon: '💬', bgColor: '#25D366' },
     { label: 'LinkedIn', icon: '💼', bgColor: '#0A66C2' },
     { label: 'Messenger', icon: '💭', bgColor: '#0084FF' },
-    { label: 'Snap', icon: '👻', bgColor: '#FFFC00' }
+    { label: 'Email', icon: '✉️', bgColor: '#EA4335' }
   ]
 };
 

@@ -20,7 +20,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
 
   const handleSocialShare = (option: SocialShareOption) => {
     const url = selectedLink?.url || window.location.href;
-    const title = selectedLink?.title || 'Fatih Foundation';
+    const title = selectedLink?.title || 'Infaq Foundation';
 
     switch (option.label.toLowerCase()) {
       case 'copy link':
@@ -51,8 +51,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({
       case 'messenger':
         window.open(`https://www.facebook.com/dialog/send?link=${encodeURIComponent(url)}&app_id=YOUR_APP_ID`, '_blank', 'noopener,noreferrer');
         break;
-      case 'snap':
-        window.open('https://www.snapchat.com/', '_blank', 'noopener,noreferrer');
+      case 'email':
+        window.open(`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent('Check out this link: ' + url)}`, '_blank', 'noopener,noreferrer');
         break;
       default:
         console.log('Unknown share option:', option.label);
@@ -152,13 +152,13 @@ export const ShareModal: React.FC<ShareModalProps> = ({
               gap: '12px',
               marginBottom: '16px'
             }}>
-              <Logo size="linkCard" src="/1122.webp" />
+              <Logo size="small" animated={false} />
               <span style={{
                 fontSize: getResponsiveValue({ mobile: '16px', tablet: '18px', desktop: '18px' }),
                 fontWeight: '600',
-                color: '#000000'
+                color: '#FFFFFF'
               }}>
-                Fatih Foundation
+                Infaq Foundation
               </span>
             </div>
 
@@ -168,7 +168,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
               fontWeight: '600',
               color: '#FFFFFF'
             }}>
-              {selectedLink?.title || 'Fatih Foundation | WhatsApp Channel'}
+              {selectedLink?.title || 'Infaq Foundation | WhatsApp Business'}
             </h4>
 
             <p
@@ -194,7 +194,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
                 e.currentTarget.style.color = '#FFFFFF';
               }}
             >
-              {selectedLink?.url ? selectedLink.url.replace(/^https?:\/\//, '') : 'whatsapp.com/cha...'}
+              {selectedLink?.url ? selectedLink.url.replace(/^https?:\/\//, '') : 'api.whatsapp.com/send/?phone=13433075825...'}
             </p>
 
             <p style={{
@@ -204,7 +204,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
               opacity: 0.7,
               lineHeight: '1.4'
             }}>
-              Fatih Foundation WhatsApp Channel. *Facebook* https://www.facebook.com/FatihFoundation/...
+              Infaq Foundation - Giving with Purpose, Serving with Heart. Join us in making a difference.
             </p>
 
             <div style={{
@@ -307,7 +307,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({
               fontWeight: '600',
               color: '#000000'
             }}>
-              Join fatihfoundationpk on Linktree
+              Join infaqfoundation on Linktree
             </h4>
             <p style={{
               margin: '0 0 16px 0',
